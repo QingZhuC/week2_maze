@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fin-resect/Program/HomeWork/program/week2_workspace
+CMAKE_SOURCE_DIR = /home/fin-resect/Program/HomeWork/program/week2_maze
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fin-resect/Program/HomeWork/program/week2_workspace/build
+CMAKE_BINARY_DIR = /home/fin-resect/Program/HomeWork/program/week2_maze/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -70,60 +70,60 @@ include CMakeFiles/main.dir/progress.make
 include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/main.cpp.o: /home/fin-resect/Program/HomeWork/program/week2_workspace/src/main.cpp
+CMakeFiles/main.dir/src/main.cpp.o: /home/fin-resect/Program/HomeWork/program/week2_maze/src/main.cpp
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fin-resect/Program/HomeWork/program/week2_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.o -MF CMakeFiles/main.dir/src/main.cpp.o.d -o CMakeFiles/main.dir/src/main.cpp.o -c /home/fin-resect/Program/HomeWork/program/week2_workspace/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fin-resect/Program/HomeWork/program/week2_maze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.o -MF CMakeFiles/main.dir/src/main.cpp.o.d -o CMakeFiles/main.dir/src/main.cpp.o -c /home/fin-resect/Program/HomeWork/program/week2_maze/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fin-resect/Program/HomeWork/program/week2_workspace/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fin-resect/Program/HomeWork/program/week2_maze/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
 
 CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fin-resect/Program/HomeWork/program/week2_workspace/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fin-resect/Program/HomeWork/program/week2_maze/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
 CMakeFiles/main.dir/src/control.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/control.cpp.o: /home/fin-resect/Program/HomeWork/program/week2_workspace/src/control.cpp
+CMakeFiles/main.dir/src/control.cpp.o: /home/fin-resect/Program/HomeWork/program/week2_maze/src/control.cpp
 CMakeFiles/main.dir/src/control.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fin-resect/Program/HomeWork/program/week2_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/control.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/control.cpp.o -MF CMakeFiles/main.dir/src/control.cpp.o.d -o CMakeFiles/main.dir/src/control.cpp.o -c /home/fin-resect/Program/HomeWork/program/week2_workspace/src/control.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fin-resect/Program/HomeWork/program/week2_maze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/control.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/control.cpp.o -MF CMakeFiles/main.dir/src/control.cpp.o.d -o CMakeFiles/main.dir/src/control.cpp.o -c /home/fin-resect/Program/HomeWork/program/week2_maze/src/control.cpp
 
 CMakeFiles/main.dir/src/control.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/control.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fin-resect/Program/HomeWork/program/week2_workspace/src/control.cpp > CMakeFiles/main.dir/src/control.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fin-resect/Program/HomeWork/program/week2_maze/src/control.cpp > CMakeFiles/main.dir/src/control.cpp.i
 
 CMakeFiles/main.dir/src/control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/control.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fin-resect/Program/HomeWork/program/week2_workspace/src/control.cpp -o CMakeFiles/main.dir/src/control.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fin-resect/Program/HomeWork/program/week2_maze/src/control.cpp -o CMakeFiles/main.dir/src/control.cpp.s
 
 CMakeFiles/main.dir/src/map.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/map.cpp.o: /home/fin-resect/Program/HomeWork/program/week2_workspace/src/map.cpp
+CMakeFiles/main.dir/src/map.cpp.o: /home/fin-resect/Program/HomeWork/program/week2_maze/src/map.cpp
 CMakeFiles/main.dir/src/map.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fin-resect/Program/HomeWork/program/week2_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/map.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/map.cpp.o -MF CMakeFiles/main.dir/src/map.cpp.o.d -o CMakeFiles/main.dir/src/map.cpp.o -c /home/fin-resect/Program/HomeWork/program/week2_workspace/src/map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fin-resect/Program/HomeWork/program/week2_maze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/map.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/map.cpp.o -MF CMakeFiles/main.dir/src/map.cpp.o.d -o CMakeFiles/main.dir/src/map.cpp.o -c /home/fin-resect/Program/HomeWork/program/week2_maze/src/map.cpp
 
 CMakeFiles/main.dir/src/map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/map.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fin-resect/Program/HomeWork/program/week2_workspace/src/map.cpp > CMakeFiles/main.dir/src/map.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fin-resect/Program/HomeWork/program/week2_maze/src/map.cpp > CMakeFiles/main.dir/src/map.cpp.i
 
 CMakeFiles/main.dir/src/map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/map.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fin-resect/Program/HomeWork/program/week2_workspace/src/map.cpp -o CMakeFiles/main.dir/src/map.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fin-resect/Program/HomeWork/program/week2_maze/src/map.cpp -o CMakeFiles/main.dir/src/map.cpp.s
 
 CMakeFiles/main.dir/src/character.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/character.cpp.o: /home/fin-resect/Program/HomeWork/program/week2_workspace/src/character.cpp
+CMakeFiles/main.dir/src/character.cpp.o: /home/fin-resect/Program/HomeWork/program/week2_maze/src/character.cpp
 CMakeFiles/main.dir/src/character.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fin-resect/Program/HomeWork/program/week2_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/character.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/character.cpp.o -MF CMakeFiles/main.dir/src/character.cpp.o.d -o CMakeFiles/main.dir/src/character.cpp.o -c /home/fin-resect/Program/HomeWork/program/week2_workspace/src/character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fin-resect/Program/HomeWork/program/week2_maze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/character.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/character.cpp.o -MF CMakeFiles/main.dir/src/character.cpp.o.d -o CMakeFiles/main.dir/src/character.cpp.o -c /home/fin-resect/Program/HomeWork/program/week2_maze/src/character.cpp
 
 CMakeFiles/main.dir/src/character.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/character.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fin-resect/Program/HomeWork/program/week2_workspace/src/character.cpp > CMakeFiles/main.dir/src/character.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fin-resect/Program/HomeWork/program/week2_maze/src/character.cpp > CMakeFiles/main.dir/src/character.cpp.i
 
 CMakeFiles/main.dir/src/character.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/character.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fin-resect/Program/HomeWork/program/week2_workspace/src/character.cpp -o CMakeFiles/main.dir/src/character.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fin-resect/Program/HomeWork/program/week2_maze/src/character.cpp -o CMakeFiles/main.dir/src/character.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -141,7 +141,7 @@ main: CMakeFiles/main.dir/src/map.cpp.o
 main: CMakeFiles/main.dir/src/character.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fin-resect/Program/HomeWork/program/week2_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fin-resect/Program/HomeWork/program/week2_maze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/fin-resect/Program/HomeWork/program/week2_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fin-resect/Program/HomeWork/program/week2_workspace /home/fin-resect/Program/HomeWork/program/week2_workspace /home/fin-resect/Program/HomeWork/program/week2_workspace/build /home/fin-resect/Program/HomeWork/program/week2_workspace/build /home/fin-resect/Program/HomeWork/program/week2_workspace/build/CMakeFiles/main.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/fin-resect/Program/HomeWork/program/week2_maze/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fin-resect/Program/HomeWork/program/week2_maze /home/fin-resect/Program/HomeWork/program/week2_maze /home/fin-resect/Program/HomeWork/program/week2_maze/build /home/fin-resect/Program/HomeWork/program/week2_maze/build /home/fin-resect/Program/HomeWork/program/week2_maze/build/CMakeFiles/main.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/main.dir/depend
 
