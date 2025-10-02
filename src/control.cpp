@@ -26,19 +26,10 @@ void CharacterControl(MyCharacter *mycharacter,GridMap *map)
                 case GridState::END:
                 case GridState::TRAP:
                 case GridState::FREE:
-                    circle.setFillColor(sf::Color::White);
-                    circle.setPosition({float(mycharacter_x*50),float(mycharacter_y*50)});
-                    window.draw(circle);
-
-                    circle.setFillColor(sf::Color::Blue);
-                    circle.setPosition({float((mycharacter_x-1)*50),float(mycharacter_y*50)});
-                    window.draw(circle);
-
                     mycharacter->setxNow(mycharacter_x-1);
                     break;
                 case GridState::OCCUPIED:
                     break;
-
                 }
             }
             break;
@@ -50,19 +41,10 @@ void CharacterControl(MyCharacter *mycharacter,GridMap *map)
                 case GridState::END:
                 case GridState::TRAP:
                 case GridState::FREE:
-                    circle.setFillColor(sf::Color::White);
-                    circle.setPosition({float(mycharacter_x*50),float(mycharacter_y*50)});
-                    window.draw(circle);
-
-                    circle.setFillColor(sf::Color::Blue);
-                    circle.setPosition({float((mycharacter_x+1)*50),float(mycharacter_y*50)});
-                    window.draw(circle);
-
                     mycharacter->setxNow(mycharacter_x+1);
                     break;
                 case GridState::OCCUPIED:
                     break;
-
                 }
             }
             break;
@@ -74,19 +56,10 @@ void CharacterControl(MyCharacter *mycharacter,GridMap *map)
                 case GridState::END:
                 case GridState::TRAP:
                 case GridState::FREE:
-                    circle.setFillColor(sf::Color::White);
-                    circle.setPosition({float(mycharacter_x*50),float(mycharacter_y*50)});
-                    window.draw(circle);
-
-                    circle.setFillColor(sf::Color::Blue);
-                    circle.setPosition({float(mycharacter_x*50),float((mycharacter_y + 1)*50)});
-                    window.draw(circle);
-
                     mycharacter->setyNow(mycharacter_y + 1);
                     break;
                 case GridState::OCCUPIED:
                     break;
-
                 }
             }
             break;
@@ -98,19 +71,10 @@ void CharacterControl(MyCharacter *mycharacter,GridMap *map)
                 case GridState::END:
                 case GridState::TRAP:
                 case GridState::FREE:
-                    circle.setFillColor(sf::Color::White);
-                    circle.setPosition({float(mycharacter_x*50),float(mycharacter_y*50)});
-                    window.draw(circle);
-
-                    circle.setFillColor(sf::Color::Blue);
-                    circle.setPosition({float(mycharacter_x*50),float((mycharacter_y - 1)*50)});
-                    window.draw(circle);
-
                     mycharacter->setyNow(mycharacter_y - 1);
                     break;
                 case GridState::OCCUPIED:
                     break;
-
                 }
             }
           break;
