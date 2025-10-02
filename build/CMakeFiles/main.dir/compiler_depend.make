@@ -267,7 +267,9 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/fin-resect/Program/HomeWork/program/we
   /home/fin-resect/Program/HomeWork/program/week2_maze/include/map.hpp \
   /usr/include/SFML/Config.hpp \
   /usr/include/SFML/Graphics/BlendMode.hpp \
+  /usr/include/SFML/Graphics/CircleShape.hpp \
   /usr/include/SFML/Graphics/Color.hpp \
+  /usr/include/SFML/Graphics/Drawable.hpp \
   /usr/include/SFML/Graphics/Export.hpp \
   /usr/include/SFML/Graphics/Image.hpp \
   /usr/include/SFML/Graphics/PrimitiveType.hpp \
@@ -276,8 +278,11 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/fin-resect/Program/HomeWork/program/we
   /usr/include/SFML/Graphics/RenderStates.hpp \
   /usr/include/SFML/Graphics/RenderTarget.hpp \
   /usr/include/SFML/Graphics/RenderWindow.hpp \
+  /usr/include/SFML/Graphics/Shape.hpp \
   /usr/include/SFML/Graphics/Transform.hpp \
+  /usr/include/SFML/Graphics/Transformable.hpp \
   /usr/include/SFML/Graphics/Vertex.hpp \
+  /usr/include/SFML/Graphics/VertexArray.hpp \
   /usr/include/SFML/Graphics/View.hpp \
   /usr/include/SFML/System.hpp \
   /usr/include/SFML/System/Clock.hpp \

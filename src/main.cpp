@@ -22,7 +22,7 @@ int main()
     GridMap Map1(15,10,50);
     Map1.setLocalMap();
     window.clear(sf::Color::Black);
-    
+    short count = 0;
     while(window.isOpen())
     {
        while(window.pollEvent(event))
@@ -38,8 +38,12 @@ int main()
             Heart.setPosition(i * 50,520);
             window.draw(Heart);
         }
-        CharacterControl(&mycharacter, &Map1);
-
+        if(count == 100)
+        {
+            CharacterControl(&mycharacter, &Map1);
+            count = 0;
+        }
         window.display();
+        count++;
     }
 }
