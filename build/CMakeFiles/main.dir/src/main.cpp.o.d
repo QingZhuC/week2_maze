@@ -56,10 +56,13 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /home/fin-resect/Program/HomeWork/program/week2_maze/src/../include/map.hpp \
- /usr/include/SFML/Graphics/Color.hpp \
+ /usr/include/SFML/Graphics/CircleShape.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
- /usr/include/SFML/Graphics/RenderWindow.hpp \
- /usr/include/SFML/Graphics/RenderTarget.hpp \
+ /usr/include/SFML/Graphics/Shape.hpp \
+ /usr/include/SFML/Graphics/Drawable.hpp \
+ /usr/include/SFML/Graphics/RenderStates.hpp \
+ /usr/include/SFML/Graphics/BlendMode.hpp \
+ /usr/include/SFML/Graphics/Transform.hpp \
  /usr/include/SFML/Graphics/Rect.hpp /usr/include/SFML/System/Vector2.hpp \
  /usr/include/SFML/System/Vector2.inl /usr/include/c++/13/algorithm \
  /usr/include/c++/13/bits/stl_algo.h \
@@ -104,12 +107,15 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/std_abs.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /usr/include/SFML/Graphics/Rect.inl /usr/include/SFML/Graphics/View.hpp \
- /usr/include/SFML/Graphics/Transform.hpp \
- /usr/include/SFML/Graphics/BlendMode.hpp \
- /usr/include/SFML/Graphics/RenderStates.hpp \
- /usr/include/SFML/Graphics/PrimitiveType.hpp \
+ /usr/include/SFML/Graphics/Rect.inl \
+ /usr/include/SFML/Graphics/Transformable.hpp \
+ /usr/include/SFML/Graphics/VertexArray.hpp \
  /usr/include/SFML/Graphics/Vertex.hpp \
+ /usr/include/SFML/Graphics/Color.hpp \
+ /usr/include/SFML/Graphics/PrimitiveType.hpp \
+ /usr/include/SFML/Graphics/RenderWindow.hpp \
+ /usr/include/SFML/Graphics/RenderTarget.hpp \
+ /usr/include/SFML/Graphics/View.hpp \
  /usr/include/SFML/System/NonCopyable.hpp \
  /usr/include/SFML/System/Export.hpp /usr/include/SFML/Graphics/Image.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/stringfwd.h \

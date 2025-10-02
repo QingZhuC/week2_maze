@@ -22,6 +22,11 @@ int MyCharacter::getyNow()
     return _yNow;
 }
 
+ void MyCharacter::setHP(int HPSet)
+ {
+    _HP = HPSet;
+ }
+
 void MyCharacter::setxNow(int xSet)
 {
     _xNow = xSet;

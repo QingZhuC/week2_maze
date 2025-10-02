@@ -10,12 +10,13 @@ void CharacterControl(MyCharacter *mycharacter,GridMap *map)
 {
     sf::CircleShape circle(25.f,30);
     sf::Event KeyEvent;
+    int mycharacter_x = mycharacter->getxNow();
+    int mycharacter_y = mycharacter->getyNow();
+    int map_W = map->getWidth();
+    int map_H = map->getHeight();
     while(window.pollEvent(KeyEvent))
     {
-        int mycharacter_x = mycharacter->getxNow();
-        int mycharacter_y = mycharacter->getyNow();
-        int map_W = map->getWidth();
-        int map_H = map->getHeight();
+       
         switch(KeyEvent.key.code)
         {
         case sf::Keyboard::A:
@@ -24,7 +25,7 @@ void CharacterControl(MyCharacter *mycharacter,GridMap *map)
                 switch (map->getGridState(mycharacter_x - 1, mycharacter_y))
                 {
                 case GridState::END:
-                case GridState::TRAP:
+                case GridState::TRAP:mycharacter->setHP(mycharacter->getHP()-1);
                 case GridState::FREE:
                     mycharacter->setxNow(mycharacter_x-1);
                     break;

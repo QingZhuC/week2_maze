@@ -2,6 +2,7 @@
 #include "../include/control.hpp"
 #include "../include/map.hpp"
 
+#include <SFML/Graphics/CircleShape.hpp>
 #include <SFML/Graphics/Color.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window.hpp>
@@ -9,12 +10,14 @@
 #include <SFML/Window/VideoMode.hpp>
 #include <SFML/Window/WindowStyle.hpp>
 
-sf::RenderWindow window(sf::VideoMode({750,500}),"MAZE",sf::Style::Close);
+sf::RenderWindow window(sf::VideoMode({750,570}),"MAZE",sf::Style::Close);
 
 
 int main()
 {
     sf::Event event;
+    sf::CircleShape Heart(20.f,30);
+    Heart.setFillColor(sf::Color::Red);
     MyCharacter mycharacter(3,0,2);
     GridMap Map1(15,10,50);
     Map1.setLocalMap();
@@ -30,7 +33,13 @@ int main()
             }
         }
         Map1.MapPrint();
+        for(short i = 0;i<mycharacter.getHP();i++)
+        {
+            Heart.setPosition(i * 50,520);
+            window.draw(Heart);
+        }
         CharacterControl(&mycharacter, &Map1);
+
         window.display();
     }
 }

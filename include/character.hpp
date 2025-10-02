@@ -11,6 +11,7 @@ public:
     int getHP();
     int getxNow();
     int getyNow();
+    void setHP(int HPSet);
     void setxNow(int xSet);
     void setyNow(int ySet);
 };
