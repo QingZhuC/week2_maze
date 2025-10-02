@@ -140,6 +140,9 @@ main: CMakeFiles/main.dir/src/control.cpp.o
 main: CMakeFiles/main.dir/src/map.cpp.o
 main: CMakeFiles/main.dir/src/character.cpp.o
 main: CMakeFiles/main.dir/build.make
+main: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1
+main: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1
+main: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fin-resect/Program/HomeWork/program/week2_maze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)

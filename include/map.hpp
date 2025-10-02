@@ -2,31 +2,47 @@
 #define WEEK2_MAZE_INCLUDE_MAP_HPP
 
 #include <vector>
+
+
+
 enum struct GridState
 {
     FREE,
     OCCUPIED,
-    UNKNOWN
+    UNKNOWN,
+    CHARACTER,
+    TRAP,
+    END
 };
 
-class GridCell
+class GridCell//栅格单元类，存储每个栅格的信息
 {
 private:
     GridState _state;
     double _x,_y;
 public:
     GridCell();
-    void SetCoordinates(double,double);
+    void SetCoordinates(double xSet,double ySet);//设定坐标
+    void SetState(GridState NewState);
+    GridState getState();
 };
 
-class GridMap
+class GridMap//栅格地图类
 {
 private:
-    std::vector<std::vector<GridCell>> _grid;
+    std::vector<std::vector<GridCell>> _grid;//二维数组存储
     int _width;
     int _height;
+    float _resolution;
 public:
+    GridMap(int widthSet,int heightSet,float resolutionSet);//初始化长宽
+    void updateGridCell(int xIndex,int yIndex,GridState NewState);
+    GridState getGridState(int xIndex,int yIndex);
     void MapPrint();
+    void setLocalMap();
+    int getWidth();
+    int getHeight();
+
 };
 
 #endif
