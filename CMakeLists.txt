@@ -12,6 +12,8 @@ add_executable(
     src/control.cpp
     src/map.cpp
     src/character.cpp
+    src/GameStart.cpp
+    src/judge.cpp
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE sfml-graphics sfml-window sfml-system)

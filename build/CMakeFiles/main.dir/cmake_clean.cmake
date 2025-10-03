@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/src/GameStart.cpp.o"
+  "CMakeFiles/main.dir/src/GameStart.cpp.o.d"
   "CMakeFiles/main.dir/src/character.cpp.o"
   "CMakeFiles/main.dir/src/character.cpp.o.d"
   "CMakeFiles/main.dir/src/control.cpp.o"
   "CMakeFiles/main.dir/src/control.cpp.o.d"
+  "CMakeFiles/main.dir/src/judge.cpp.o"
+  "CMakeFiles/main.dir/src/judge.cpp.o.d"
   "CMakeFiles/main.dir/src/main.cpp.o"
   "CMakeFiles/main.dir/src/main.cpp.o.d"
   "CMakeFiles/main.dir/src/map.cpp.o"

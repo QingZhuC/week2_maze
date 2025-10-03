@@ -24,6 +24,7 @@ public:
     GridCell();
     void SetCoordinates(double xSet,double ySet);//设定坐标
     void SetState(GridState NewState);
+    void getXY(double *xGet,double *yGet);
     GridState getState();
 };
 
@@ -43,6 +44,14 @@ public:
     int getWidth();
     int getHeight();
 
+};
+
+class MapTrap:public GridCell
+{
+public:
+    MapTrap();
+    void SetTrapCoordinates(double xSet,double ySet);
+    int GenerateTrap(GridMap *map);
 };
 
 #endif

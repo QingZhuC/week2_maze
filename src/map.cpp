@@ -1,6 +1,9 @@
 #include "../include/map.hpp"
 #include "../include/LocalMap.hpp"
 
+#include <cstdlib>
+#include <ctime>
+
 #include <SFML/Graphics/CircleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Graphics/Color.hpp>
@@ -8,6 +11,7 @@
 
 
 extern sf::RenderWindow window;
+
 
 GridCell::GridCell()
 {
@@ -24,6 +28,12 @@ void GridCell::SetCoordinates(double xSet,double ySet)
 void GridCell::SetState(GridState NewState)
 {
     _state = NewState;
+}
+
+void GridCell::getXY(double *xGet,double *yGet)
+{
+    *xGet = _x;
+    *yGet = _y;
 }
 
 GridState GridCell::getState()
@@ -82,35 +92,47 @@ void GridMap::MapPrint()
         for(int x = 0; x < _width; x++)
         {
             rectangle.setPosition({x*_resolution,y*_resolution});
+            rectangle.setOutlineThickness(-1);
             circle.setPosition({x*_resolution,y*_resolution});
             switch (_grid[y][x].getState())
             {
 
             case GridState::FREE:
                 rectangle.setFillColor(sf::Color::White);
-                rectangle.setOutlineThickness(-1);
                 rectangle.setOutlineColor(sf::Color::Black);
                 window.draw(rectangle);
                 break;
             case GridState::OCCUPIED:
                 rectangle.setFillColor(sf::Color::Black);
-                rectangle.setOutlineThickness(-1);
                 rectangle.setOutlineColor(sf::Color::White);
                 window.draw(rectangle);
                 break;
             case GridState::UNKNOWN:
                 rectangle.setFillColor({128,128,128});
-                rectangle.setOutlineThickness(-1);
                 rectangle.setOutlineColor({128,128,128});
                 window.draw(rectangle);
                 break;
             case GridState::CHARACTER:
                 circle.setFillColor(sf::Color::Blue);
+                circle.setPointCount(30);
                 window.draw(circle);
                 break;
             case GridState::TRAP:
+                circle.setFillColor(sf::Color::Magenta);
+                circle.setPointCount(3);
+                rectangle.setFillColor(sf::Color::White);
+                rectangle.setOutlineColor(sf::Color::Black);
+                window.draw(rectangle);
+                window.draw(circle);
+                break;
             case GridState::END:
-              break;
+                circle.setFillColor(sf::Color::Green);
+                circle.setPointCount(4);
+                rectangle.setFillColor(sf::Color::White);
+                rectangle.setOutlineColor(sf::Color::Black);
+                window.draw(rectangle);
+                window.draw(circle);
+                break;
             }
         }
     }
@@ -145,4 +167,42 @@ int GridMap::getWidth()
 int GridMap::getHeight()
 {
     return _height;
+}
+
+MapTrap::MapTrap()
+{
+    SetState(GridState::TRAP);
+}
+
+void MapTrap::SetTrapCoordinates(double xSet,double ySet)
+{
+    SetCoordinates(xSet, ySet);
+}
+
+int MapTrap::GenerateTrap(GridMap *map)
+{
+    double xTrap,yTrap;
+    int width = map->getWidth();
+    int height = map->getHeight();
+
+    getXY(&xTrap, &yTrap);
+    if(map->getGridState(xTrap, yTrap) == GridState::TRAP)
+    {
+        map->updateGridCell(xTrap, yTrap, GridState::FREE);
+    }
+
+    srand(time(NULL));
+    //do {
+    //{
+        xTrap = rand() % width;
+        yTrap = rand() % height;
+    //}
+    //}while (map->getGridState(xTrap, yTrap) != GridState::FREE);
+    if(map->getGridState(xTrap, yTrap) == GridState::FREE)
+    {
+        map->updateGridCell(xTrap,yTrap,GridState::TRAP);
+        SetTrapCoordinates(xTrap, yTrap);
+        return 1;
+    }
+    return 0;
 }

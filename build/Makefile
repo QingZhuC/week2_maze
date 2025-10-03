@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/GameStart.o: src/GameStart.cpp.o
+.PHONY : src/GameStart.o
+
+# target to build an object file
+src/GameStart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GameStart.cpp.o
+.PHONY : src/GameStart.cpp.o
+
+src/GameStart.i: src/GameStart.cpp.i
+.PHONY : src/GameStart.i
+
+# target to preprocess a source file
+src/GameStart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GameStart.cpp.i
+.PHONY : src/GameStart.cpp.i
+
+src/GameStart.s: src/GameStart.cpp.s
+.PHONY : src/GameStart.s
+
+# target to generate assembly for a file
+src/GameStart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GameStart.cpp.s
+.PHONY : src/GameStart.cpp.s
+
 src/character.o: src/character.cpp.o
 .PHONY : src/character.o
 
@@ -176,6 +200,30 @@ src/control.s: src/control.cpp.s
 src/control.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/control.cpp.s
 .PHONY : src/control.cpp.s
+
+src/judge.o: src/judge.cpp.o
+.PHONY : src/judge.o
+
+# target to build an object file
+src/judge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/judge.cpp.o
+.PHONY : src/judge.cpp.o
+
+src/judge.i: src/judge.cpp.i
+.PHONY : src/judge.i
+
+# target to preprocess a source file
+src/judge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/judge.cpp.i
+.PHONY : src/judge.cpp.i
+
+src/judge.s: src/judge.cpp.s
+.PHONY : src/judge.s
+
+# target to generate assembly for a file
+src/judge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/judge.cpp.s
+.PHONY : src/judge.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -234,12 +282,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/GameStart.o"
+	@echo "... src/GameStart.i"
+	@echo "... src/GameStart.s"
 	@echo "... src/character.o"
 	@echo "... src/character.i"
 	@echo "... src/character.s"
 	@echo "... src/control.o"
 	@echo "... src/control.i"
 	@echo "... src/control.s"
+	@echo "... src/judge.o"
+	@echo "... src/judge.i"
+	@echo "... src/judge.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
