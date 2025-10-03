@@ -1,17 +1,8 @@
 #include "../include/control.hpp"
 #include <SFML/Graphics.hpp>
-#include <SFML/Graphics/Color.hpp>
-#include <SFML/Graphics/Text.hpp>
-#include <SFML/Window.hpp>
-
-
-extern sf::RenderWindow window;
-
 
 int CharacterControl(MyCharacter *mycharacter,GridMap *map)
 {
-    sf::CircleShape circle(25.f,30);
-    sf::Event KeyEvent;
     int mycharacter_x = mycharacter->getxNow();
     int mycharacter_y = mycharacter->getyNow();
     int map_W = map->getWidth();

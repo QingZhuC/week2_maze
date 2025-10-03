@@ -3,7 +3,9 @@
 
 #include "map.hpp"
 #include "character.hpp"
+#include <SFML/Graphics.hpp>
 
-int judge(MyCharacter *mycharacter,GridMap *map);
+
+int judge(MyCharacter *mycharacter,GridMap *map,sf::RenderWindow *window, sf::Font *font);
 
 #endif

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/fin-resect/Program/HomeWork/program/week2_maze/src/GameStart.cpp" "CMakeFiles/main.dir/src/GameStart.cpp.o" "gcc" "CMakeFiles/main.dir/src/GameStart.cpp.o.d"
+  "/home/fin-resect/Program/HomeWork/program/week2_maze/src/UI.cpp" "CMakeFiles/main.dir/src/UI.cpp.o" "gcc" "CMakeFiles/main.dir/src/UI.cpp.o.d"
   "/home/fin-resect/Program/HomeWork/program/week2_maze/src/character.cpp" "CMakeFiles/main.dir/src/character.cpp.o" "gcc" "CMakeFiles/main.dir/src/character.cpp.o.d"
   "/home/fin-resect/Program/HomeWork/program/week2_maze/src/control.cpp" "CMakeFiles/main.dir/src/control.cpp.o" "gcc" "CMakeFiles/main.dir/src/control.cpp.o.d"
   "/home/fin-resect/Program/HomeWork/program/week2_maze/src/judge.cpp" "CMakeFiles/main.dir/src/judge.cpp.o" "gcc" "CMakeFiles/main.dir/src/judge.cpp.o.d"

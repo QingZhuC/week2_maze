@@ -3,7 +3,8 @@
 
 #include <vector>
 
-
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
 
 enum struct GridState
 {
@@ -39,8 +40,8 @@ public:
     GridMap(int widthSet,int heightSet,float resolutionSet);//初始化长宽
     void updateGridCell(int xIndex,int yIndex,GridState NewState);
     GridState getGridState(int xIndex,int yIndex);
-    void MapPrint();
-    void setLocalMap();
+    void MapPrint(sf::RenderWindow *window);
+    void setLocalMap(short WhichMap);
     int getWidth();
     int getHeight();
 

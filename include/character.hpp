@@ -1,6 +1,6 @@
 #ifndef WEEK2_MAZE_INCLUDE_CHARACTER_HPP
 #define WEEK2_MAZE_INCLUDE_CHARACTER_HPP
-
+#include <SFML/Graphics.hpp>
 class MyCharacter
 {
 private:
@@ -14,6 +14,7 @@ public:
     void setHP(int HPSet);
     void setxNow(int xSet);
     void setyNow(int ySet);
+    void ShowHP(sf::RenderWindow *window);
 };
 
 #endif

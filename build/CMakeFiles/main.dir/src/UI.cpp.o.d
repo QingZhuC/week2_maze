@@ -1,5 +1,5 @@
-CMakeFiles/main.dir/src/main.cpp.o: \
- /home/fin-resect/Program/HomeWork/program/week2_maze/src/main.cpp \
+CMakeFiles/main.dir/src/UI.cpp.o: \
+ /home/fin-resect/Program/HomeWork/program/week2_maze/src/UI.cpp \
  /usr/include/stdc-predef.h \
  /home/fin-resect/Program/HomeWork/program/week2_maze/src/../include/UI.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
@@ -235,4 +235,5 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
- /usr/include/SFML/Graphics/VertexBuffer.hpp
+ /usr/include/SFML/Graphics/VertexBuffer.hpp \
+ /home/fin-resect/Program/HomeWork/program/week2_maze/src/../include/GameStart.hpp

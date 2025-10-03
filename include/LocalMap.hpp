@@ -1,6 +1,29 @@
 #ifndef WEEK2_MAZE_INCLUDE_LOCALMAP_HPP
 #define WEEK2_MAZE_INCLUDE_LOCALMAP_HPP
 
-unsigned short const map1[10] = {65527,65511,15,65535,65535,65535,65535,65535,65535,65535};
+unsigned short const map1[10] ={
+    0xFFF8,
+    0xF17A,
+    0xC53A,
+    0xD5BA,
+    0x1422,
+    0xD5EE,
+    0x950A,
+    0xB57A,
+    0x8402,
+    0xFFFF
+};
 
+unsigned short const map2[10] = {
+    0xF7FE,
+    0xF030,
+    0x8FA4,
+    0xA8AC,
+    0xAAA4,
+    0xEAB4,
+    0x2B84,
+    0xA8FC,
+    0x8200,
+    0xFFFF
+};
 #endif

@@ -4,15 +4,6 @@
 #include <cstdlib>
 #include <ctime>
 
-#include <SFML/Graphics/CircleShape.hpp>
-#include <SFML/Graphics/RenderWindow.hpp>
-#include <SFML/Graphics/Color.hpp>
-#include <SFML/Graphics/RectangleShape.hpp>
-
-
-extern sf::RenderWindow window;
-
-
 GridCell::GridCell()
 {
     _state = GridState::UNKNOWN;
@@ -83,7 +74,7 @@ GridState GridMap::getGridState(int xIndex,int yIndex)
     }
 }
 
-void GridMap::MapPrint()
+void GridMap::MapPrint(sf::RenderWindow *window)
 {
     sf::CircleShape circle(25.f,30);
     sf::RectangleShape rectangle({_resolution,_resolution});
@@ -99,39 +90,42 @@ void GridMap::MapPrint()
 
             case GridState::FREE:
                 rectangle.setFillColor(sf::Color::White);
-                rectangle.setOutlineColor(sf::Color::Black);
-                window.draw(rectangle);
+                rectangle.setOutlineColor({128,128,128});
+                window->draw(rectangle);
                 break;
             case GridState::OCCUPIED:
                 rectangle.setFillColor(sf::Color::Black);
-                rectangle.setOutlineColor(sf::Color::White);
-                window.draw(rectangle);
+                rectangle.setOutlineColor({128,128,128});
+                window->draw(rectangle);
                 break;
             case GridState::UNKNOWN:
                 rectangle.setFillColor({128,128,128});
                 rectangle.setOutlineColor({128,128,128});
-                window.draw(rectangle);
+                window->draw(rectangle);
                 break;
             case GridState::CHARACTER:
                 circle.setFillColor(sf::Color::Blue);
                 circle.setPointCount(30);
-                window.draw(circle);
+                rectangle.setFillColor(sf::Color::White);
+                rectangle.setOutlineColor({128,128,128});
+                window->draw(rectangle);
+                window->draw(circle);
                 break;
             case GridState::TRAP:
                 circle.setFillColor(sf::Color::Magenta);
                 circle.setPointCount(3);
                 rectangle.setFillColor(sf::Color::White);
-                rectangle.setOutlineColor(sf::Color::Black);
-                window.draw(rectangle);
-                window.draw(circle);
+                rectangle.setOutlineColor({128,128,128});
+                window->draw(rectangle);
+                window->draw(circle);
                 break;
             case GridState::END:
                 circle.setFillColor(sf::Color::Green);
                 circle.setPointCount(4);
                 rectangle.setFillColor(sf::Color::White);
-                rectangle.setOutlineColor(sf::Color::Black);
-                window.draw(rectangle);
-                window.draw(circle);
+                rectangle.setOutlineColor({128,128,128});
+                window->draw(rectangle);
+                window->draw(circle);
                 break;
             }
         }
@@ -139,22 +133,44 @@ void GridMap::MapPrint()
 
 }
 
-void GridMap::setLocalMap()
+void GridMap::setLocalMap(short WhichMap)
 {
     short i = 0;
-    for(int y = 0; y < _height; y++)
+    if(WhichMap == 1)
     {
-        for (int x = 0; x < _width; x++)
+        for(int y = 0; y < _height; y++)
         {
-            i = (map1[y] >> (_width-x)) & 0x01;
-            switch(i)
+            for (int x = 0; x < _width; x++)
             {
-            case 1:
-                _grid[y][x].SetState(GridState::OCCUPIED);
-                break;
-            case 0:
-                _grid[y][x].SetState(GridState::FREE);
-                break;
+                i = (map1[y] >> (_width-x)) & 0x01;
+                switch(i)
+                {
+                case 1:
+                    _grid[y][x].SetState(GridState::OCCUPIED);
+                    break;
+                case 0:
+                    _grid[y][x].SetState(GridState::FREE);
+                    break;
+                }
+            }
+        }
+    }
+    else if(WhichMap == 2)
+    {
+        for(int y = 0; y < _height; y++)
+        {
+            for (int x = 0; x < _width; x++)
+            {
+                i = (map2[y] >> (_width-x)) & 0x01;
+                switch(i)
+                {
+                case 1:
+                    _grid[y][x].SetState(GridState::OCCUPIED);
+                    break;
+                case 0:
+                    _grid[y][x].SetState(GridState::FREE);
+                    break;
+                }
             }
         }
     }
