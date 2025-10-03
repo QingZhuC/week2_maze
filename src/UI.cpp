@@ -1,5 +1,6 @@
 #include "../include/UI.hpp"
 #include "../include/GameStart.hpp"
+#include <SFML/Graphics/RectangleShape.hpp>
 
 using namespace sf;
 
@@ -122,6 +123,11 @@ void WinShow(RenderWindow *window,Font *font)//用于显示胜利信息
     WinText.setFillColor(sf::Color::Green);
     WinText.setPosition({220,200});
 
+    sf::RectangleShape rectangle({390,100});
+    rectangle.setFillColor({128,128,128});
+    rectangle.setPosition(200,200);
+
+    window->draw(rectangle);
     window->draw(WinText);
 }
 void LoseShow(RenderWindow *window,Font *font)//用于显示失败信息
@@ -130,5 +136,10 @@ void LoseShow(RenderWindow *window,Font *font)//用于显示失败信息
     LoseText.setFillColor(sf::Color::Red);
     LoseText.setPosition({190,200});
 
+    sf::RectangleShape rectangle({420,100});
+    rectangle.setFillColor({128,128,128});
+    rectangle.setPosition(170,200);
+
+    window->draw(rectangle);
     window->draw(LoseText); 
 }
